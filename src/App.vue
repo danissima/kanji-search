@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <kanjiSearch />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<style>
+@import url("./assets/css/style.css");
+</style>
 
+<script>
+import kanjiSearch from './components/kanjiSearch.vue'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    kanjiSearch
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  #app
+    display: flex
+    align-items: center
+    flex-direction: column
+    height: 100vh
 </style>

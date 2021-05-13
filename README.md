@@ -1,4 +1,4 @@
-# learn-vue
+# search-kanji
 
 ## Project setup
 ```
