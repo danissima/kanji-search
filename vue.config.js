@@ -6,5 +6,10 @@ module.exports = {
       }
     }
   },
-  assetsDir: 'assets'
+
+  assetsDir: 'assets',
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 }

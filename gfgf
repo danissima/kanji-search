@@ -1,0 +1,23 @@
+[33mcommit e874a5830582f5ddd0aa4827046092bb6918d002[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Danila Odintsov <danila.odintsov@nutnet.ru>
+Date:   Mon Jun 28 13:38:24 2021 +0400
+
+    learn firebase deploy
+
+[33mcommit 60f5b650c68b420d11d319594023277169a43ada[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Danila Odintsov <danila.odintsov@nutnet.ru>
+Date:   Fri May 28 11:19:42 2021 +0400
+
+    complete
+
+[33mcommit 9560531d18f89f160421cb23ed3bab017d031bef[m
+Author: Danila Odintsov <danila.odintsov@nutnet.ru>
+Date:   Thu May 13 12:58:05 2021 +0400
+
+    initial commit
+
+[33mcommit 09723a54f2f263f05680825db45225e0cadef6c4[m
+Author: Danila Odintsov <danila.odintsov@nutnet.ru>
+Date:   Wed May 5 16:31:46 2021 +0400
+
+    init
