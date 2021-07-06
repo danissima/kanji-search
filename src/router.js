@@ -6,15 +6,19 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    component: () => import("./components/auth/auth.vue")
+    component: () => import("./components/home/home.vue")
   },
   {
-    path: "/registration",
-    component: () => import("./components/reg/reg.vue")
+    path: "/search",
+    component: () => import("./components/search/search.vue")
   },
   {
-    path: "*",
-    component: () => import("./components/page404/page404.vue")
+    path: "/saved",
+    component: () => import("./components/savedReciepes/savedReciepes.vue")
+  },
+  {
+    path: "/reciepe/:reciepeId",
+    component: () => import("./components/singleReciepe/singleReciepe.vue")
   }
 ];
 

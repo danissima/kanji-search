@@ -1,0 +1,23 @@
+.reciepe-item
+  &__content
+    border-radius: 20px
+    overflow: hidden
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+    transition: transform .3s ease-out, box-shadow .3s ease-out
+    &:hover
+      transform: translateY(-3px)
+      box-shadow: 0px 5px 16px 6px rgba(34, 60, 80, 0.2)
+  &__image img
+    width: 100%
+  & .h3
+    margin: 12px 0
+    padding: 0 10px
+    text-align: center
+    cursor: pointer
+    transition: color .15s ease-out
+    &:hover
+      color: darkorange
+  &__controls
+    display: flex
+    justify-content: center
+    padding: 15px
