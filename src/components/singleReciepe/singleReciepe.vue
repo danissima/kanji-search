@@ -19,7 +19,7 @@
       </div>
       <div class="single-reciepe__instructions">
         <h3 class="h3 single-reciepe__subtitle">Instructions</h3>
-        <p ref="reciepeInstructions" class="single-reciepe__text">{{ reciepeData.instructions }}</p>
+        <p ref="reciepeInstructions" v-html="reciepeData.instructions" class="single-reciepe__text"></p>
       </div>
       <div class="single-reciepe__pros">
         <p v-if="reciepeData.veryPopular">
