@@ -21,7 +21,5 @@ export default {
       reciepes: this.$store.getters["reciepes/getSavedReciepes"]
     }
   },
-  methods: {
-  }
 }
 </script>

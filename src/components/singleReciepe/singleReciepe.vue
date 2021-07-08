@@ -22,36 +22,40 @@
         <p ref="reciepeInstructions" v-html="reciepeData.instructions" class="single-reciepe__text"></p>
       </div>
       <div class="single-reciepe__pros">
-        <p v-if="reciepeData.veryPopular">
-          <v-icon
-            large
-            color="pink"
-          >
-            mdi-heart
-          </v-icon>
-          <b>Very popular</b>
-        </p>
-        <p>
-          <v-icon
-            large
-            color="blue"
-          >
-            mdi-alarm-check
-          </v-icon>
-          <b>Ready in {{ reciepeData.readyInMinutes }} minutes</b>
-        </p>
+        <infoIcon
+          v-if="reciepeData.veryPopular"
+          color="pink"
+          icon="heart" 
+          iconTitle="Very Popular"
+        />
+        <infoIcon
+          color="blue"
+          icon="alarm-check" 
+          :iconTitle="`Ready in ${reciepeData.readyInMinutes} minutes`"
+        />
+        <infoIcon
+          v-if="reciepeData.veryHealthy"
+          color="green"
+          icon="spa" 
+          iconTitle="Very Healthy"
+        />
       </div>
     </v-container>
   </div>
 </template>
 
 <script>
+import infoIcon from './includes/infoIcon/infoIcon.vue'
+
 export default {
   name: 'singleReciepe',
   data() {
     return {
       reciepeData: null
     }
+  },
+  components: {
+    infoIcon
   },
   methods: {
     getReciepeData(reciepeId) {
