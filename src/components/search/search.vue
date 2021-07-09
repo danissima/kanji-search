@@ -80,7 +80,7 @@ export default  {
       checkSelectDiet: false,
     }
   },
-  
+
   methods: {
     searchReciepe() {
       let reciepe = this.$refs.reciepe.$refs.input.value
