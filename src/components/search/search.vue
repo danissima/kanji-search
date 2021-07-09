@@ -12,7 +12,6 @@
             ></v-switch>
             <v-slider
               v-model="maxReadyTime"
-              ref="maxReadyTime"
               min="5"
               max="300"
               :thumb-label="true" 
@@ -28,7 +27,6 @@
             <v-range-slider
               v-model="caloriesRange"
               :disabled="!checkCaloriesRange"
-              ref="caloriesRange"
               min="50"
               max="2000"
               :thumb-label="true" 
@@ -43,13 +41,13 @@
             <v-select
               v-model="selectDiet"
               :disabled="!checkSelectDiet"
-              ref="selectDiet"
-              :items="['Gluten Free', 'Ketogenic','Lacto-Vegetarian','Ovo-Vegetarian','Vegan','Pescetarian','Paleo','Primal','Whole30']"
+              :items="['Gluten Free','Vegetarian', 'Ketogenic','Lacto-Vegetarian','Ovo-Vegetarian','Vegan','Pescetarian','Paleo','Primal','Whole30']"
               label="Your diet" 
             ></v-select>
           </div>        
         </div>
         <v-text-field
+          name="reciepe"
           label='What are you looking for?'
           ref="reciepe"
         ></v-text-field>
@@ -102,10 +100,6 @@ export default  {
     toOption(optCheck, optTitle, optValue) {
       return optCheck ? `&${optTitle}=${optValue}` : ''
     },
-  },
-
-  mounted() {
-    this.selectDiet = this.$refs.selectDiet.disabled ? '' : `&diet=${this.$refs.selectDiet.value}`
   },
 }
 </script>

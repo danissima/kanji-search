@@ -1,5 +1,5 @@
 <template>
-  <v-col class="reciepe-item flex-column align-center col-3">
+  <v-col class="reciepe-item flex-column align-center col-12 col-sm-6 col-md-4 col-lg-3">
     <div class="reciepe-item__content">
       <div class="reciepe-item__image">
         <img :src="info.image" :alt="info.title">
