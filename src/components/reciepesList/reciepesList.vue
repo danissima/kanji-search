@@ -1,6 +1,7 @@
 <template>
   <div class="reciepes-list">
     <v-pagination 
+      v-if="pageCount > 1"
       :length="pageCount"
       v-model="pageNumber"
       :total-visible="7"

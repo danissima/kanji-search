@@ -1,7 +1,7 @@
 <template>
   <div class="single-reciepe" v-if="reciepeData">
     <v-container>
-      <h2 class="h2">{{ reciepeData.title }}</h2>
+      <h2 class="h2">{{ reciepeData.title }} <addReciepeBtn :info="reciepeData" /> </h2>
       <div class="single-reciepe__main">
         <div class="single-reciepe__img">
           <img :src="reciepeData.image" :alt="reciepeData.title">
@@ -51,6 +51,7 @@
 <script>
 import infoIcon from './includes/infoIcon/infoIcon.vue'
 import reciepesList from '../reciepesList/reciepesList.vue'
+import addReciepeBtn from '../addReciepeBtn/addReciepeBtn.vue'
 
 export default {
   name: 'singleReciepe',
@@ -65,6 +66,7 @@ export default {
   components: {
     infoIcon,
     reciepesList,
+    addReciepeBtn,
   },
 
   methods: {
